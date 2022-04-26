@@ -1,0 +1,158 @@
+body{
+    background-color: #182744;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}
+
+.logo{
+    text-align: center;
+    margin: 2rem 0rem;
+}
+
+.logo > img{
+    width: 10rem;
+}
+
+.inputSearch{
+    text-align: center;
+}
+
+.inputSearch > input {
+    width: 15rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #5e687d;
+    color: white;
+}
+
+.inputSearch > input::placeholder{
+    color: white;
+}
+
+.inputSearch > button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: white;
+    color: #5e687d;
+    font-weight: bold;
+}
+
+.gridResult{
+    display: none;
+    grid-template-columns: 30% 70%;
+    padding: 4rem 6rem;
+}
+
+.gridResult > div {
+    margin: 1rem;
+    border-radius: 8px;
+    background: rgba( 255, 255, 255, 0.3 );
+    backdrop-filter: blur( 4px );
+    box-shadow: 5px 5px 15px 5px #0E1729;
+    text-align: center;
+}
+
+.gridResult > div >h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.numType{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+#resultType{
+    margin-left: 1rem;
+    text-transform: uppercase;
+    font-size: 1rem; 
+}
+
+#resultType > p {
+    padding: 0.2rem 0.8rem;
+    border-radius: 8px;
+}
+
+#resultPicture > img{
+    width: 12rem;
+}
+
+.fire{
+    background-color: #fb8500;
+}
+
+.electric{
+    background-color: #ffb703;
+    color: black;
+}
+
+.water{
+    background-color: #219ebc;
+}
+
+.grass{
+    background-color: #6a994e;
+}
+
+.bug{
+    background-color: #aacc00;
+}
+
+.normal{
+    background-color: #8b8c89;
+}
+
+.poison{
+    background-color: #5a189a;
+}
+
+.ice{
+    background-color: #90e0ef;
+    color: black;
+}
+
+.ground{
+    background-color: #a68a64;
+}
+
+.rock{
+    background-color: #a5a58d;
+}
+
+.steel{
+    background-color: #6c757d;
+}
+
+.flying{
+    background-color: #bee1e6;
+    color: black;
+}
+
+.ghost{
+    background-color: #312244;
+}
+
+.psychic{
+    background-color: #ff4d6d;
+}
+
+.fairy{
+    background-color: #ffb3c1;
+}
+
+.fighting{
+    background-color: #f2542d;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+    font-size: 1.2rem;
+}
