@@ -1,15 +1,3 @@
-// async function getPokemon(){
-// let namePokemon = document.getElementById("search").value;
-// await fetch('assets/js/myPokedex.json')
-//     .then(response => response.json())
-//     .then(data => {
-//         let pokemon = data.pokedex.find(item => item.name == namePokemon).id;
-//         console.log(pokemon);
-//         return pokemon;
-//     })
-// }
-
-
 async function displayPokemon(){
     let namePokemon = document.getElementById("search").value;
     let nameFormat = namePokemon[0].toUpperCase() + namePokemon.substring(1);
