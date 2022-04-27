@@ -5,19 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="logo">
         <img src="assets/img/logo_pokeball.png" alt="logo-pokemon">
     </div>
-    <form class="inputSearch">
+    <div class="inputSearch">
         <input type="text" name="search" id="search" placeholder="Rechercher un pokémon...">
         <button type="button" id="btnSrch" onclick="displayPokemon()">Rechercher</button>
-    </form>
+    </div>
+
+    <div id="noResult"></div>
 
     <div class="gridResult" id="result">
         <div>
@@ -25,7 +27,10 @@
             <h1 id="resultName"></h1>
             <div class="numType">
                 <p id="resultNum"></p>
-                <div id="resultType"></div>
+                <div class="allTypes">
+                    <div id="resultType"></div>
+                    <div id="resultType2"></div>
+                </div>
             </div>
         </div>
         <div>
@@ -46,6 +51,6 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="assets/script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

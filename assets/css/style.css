@@ -1,12 +1,13 @@
 body{
-    background-color: #182744;
+    background-color: #15223c;
+    /* background-color: #BF1E2E; */
     font-family: 'Nunito', sans-serif;
     color: white;
 }
 
 .logo{
     text-align: center;
-    margin: 2rem 0rem;
+    margin: 1rem 0rem;
 }
 
 .logo > img{
@@ -22,12 +23,14 @@ body{
     padding: 0.5rem;
     border: none;
     border-radius: 8px;
-    background-color: #5e687d;
-    color: white;
+    background-color: white;
+    color: #15223c;
+    margin-right: 1rem;
+    font-weight: bold;
 }
 
 .inputSearch > input::placeholder{
-    color: white;
+    color: #15223c;
 }
 
 .inputSearch > button {
@@ -35,8 +38,16 @@ body{
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    background-color: white;
-    color: #5e687d;
+    background-color: #df1818;
+    color: white;
+    font-weight: bold;
+}
+
+#noResult{
+    display: none;
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 1.4rem;
     font-weight: bold;
 }
 
@@ -49,9 +60,14 @@ body{
 .gridResult > div {
     margin: 1rem;
     border-radius: 8px;
-    background: rgba( 255, 255, 255, 0.3 );
-    backdrop-filter: blur( 4px );
-    box-shadow: 5px 5px 15px 5px #0E1729;
+    /* background: rgba( 255, 255, 255, 0.15 ); */
+    /* background: rgba(191, 30, 46, 0.15); */
+    background-color: rgba(21, 34, 60, 0.15);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur( 4px );
+    -moz-backdrop-filter: blur( 4px );
+    box-shadow: 5px 5px 15px 5px #0b1220;
+    border: 1px solid rgba(255, 255, 255, 0.18);
     text-align: center;
 }
 
@@ -74,9 +90,16 @@ body{
     font-size: 1rem; 
 }
 
-#resultType > p {
+#resultType > p, #resultType2 > p {
     padding: 0.2rem 0.8rem;
     border-radius: 8px;
+}
+
+#resultType2{
+    display: none;
+    margin-left: 1rem;
+    text-transform: uppercase;
+    font-size: 1rem;
 }
 
 #resultPicture > img{
@@ -155,4 +178,20 @@ body{
     justify-content: space-between;
     padding: 1rem 4rem;
     font-size: 1.2rem;
+    padding-top: 2rem;
+}
+
+.allTypes{
+    display: flex;
+}
+
+@media (max-width: 900px){
+    .gridResult{
+        grid-template-columns: 100%;
+        padding: 2rem 0rem;
+    }
+
+    .details{
+        padding: 1rem 2rem;
+    }
 }
